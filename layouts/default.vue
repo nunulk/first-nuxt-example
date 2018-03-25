@@ -1,6 +1,11 @@
 <template>
-  <div>
-    <nuxt/>
+  <div class="body">
+    <header>
+      <h1>Nuxt Example</h1>
+    </header>
+    <main>
+      <nuxt/>
+    </main>
   </div>
 </template>
 
@@ -19,6 +24,17 @@ html {
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+header {
+  padding: 8px 16px;
+  background-color: #3b8070;
+  color: #fff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .button--green {

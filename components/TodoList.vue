@@ -1,5 +1,6 @@
 <template>
   <div class="card-body">
+    <CreateTodo></CreateTodo>
     <ul class="list-unstyled">
       <li v-for="todo in items" :key="todo.id" :class="{ [$style.done]: todo.done }">
         <label>
@@ -12,6 +13,7 @@
 </template>
 <script>
 import { mapMutations, mapActions } from 'vuex'
+import CreateTodo from '~/components/CreateTodo.vue'
 
 export default {
   components: {
